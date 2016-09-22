@@ -13,9 +13,14 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        // replace this example code with whatever you need
+        $url = 'http://api.openweathermap.org/data/2.5/weather?q='.$_GET['q'].'&APPID=c4d64189685c30187df7546364d23e5b';
+        $obj = json_decode(file_get_contents($url), true);
+
         return $this->render('default/index.html.twig', [
-            'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..'),
+            'wind_speed' => $obj['wind']['speed'],
+            // 'temperature': TODO
+            // 'humidity': TODO
+            // etc..
         ]);
     }
 }

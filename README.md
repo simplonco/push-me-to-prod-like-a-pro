@@ -1,68 +1,51 @@
-Symfony Standard Edition
-========================
+Is it raining today?
+===============
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+_Build a simple Weather app with PHP Symfony!_
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+![](weather-ui-gif.gif)
 
-What's inside?
---------------
+## Level 0 - Launch & Understand the app 
 
-The Symfony Standard Edition is configured with the following defaults:
+Clone https://github.com/simplonco/is-it-raining and make it work on your computer:
 
-  * An AppBundle you can use to start coding;
+```shell
+cd symfony-project
+php bin/console server:run
+firefox "http://127.0.0.1:8000/?q=Paris"
+```
 
-  * Twig as the only configured template engine;
+Try to change the value of the `q` GET parameter in the url.
 
-  * Doctrine ORM/DBAL;
+## Level 1 - Choose an API
 
-  * Swiftmailer;
+Build your own app, with this cool list of public APIs: https://github.com/toddmotto/public-apis
 
-  * Annotations enabled for everything.
+I choose for you an API which ask a city name parameter and return you weather informations: http://openweathermap.org/current#name
 
-It comes pre-configured with the following bundles:
+But of course you're free to use an other API of your choice!
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+## Level 2 - Retreive data
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+Try to change the API call in the file `src/AppBundle/Controller/DefaultController.php` (the controller) and display it (without CSS just as plain text) in the `app/Resources/view/default/index.html.twig` (the template view).
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
+## Level 3 - Make it beautiful
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+Now free your creativity: add some CSS to make the app beautiful, and let user enter the city name in an HTML form (not directly in the URL)! You can use some templates, for example: http://codepen.io/davidkpiano/full/ByNPQw
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+## Level 4 - Make it secure
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+What's happen when for example you enter a wrong city name? Try to handle properly error.
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+## Ressources
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.0/book/installation.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.0/book/doctrine.html
-[8]:  https://symfony.com/doc/3.0/book/templating.html
-[9]:  https://symfony.com/doc/3.0/book/security.html
-[10]: https://symfony.com/doc/3.0/cookbook/email.html
-[11]: https://symfony.com/doc/3.0/cookbook/logging/monolog.html
-[13]: https://symfony.com/doc/3.0/bundles/SensioGeneratorBundle/index.html
+> **Symfony Getting Started Tutorials**:
+>
+> Start here to learn the essentials about developing web applications with Symfony.
+>
+> - Chapter 1. *Setup* https://symfony.com/doc/current/setup.html
+> - Chapter 2. *Creating Pages* https://symfony.com/doc/current/page_creation.html
+> - Chapter 3. *Routing* https://symfony.com/doc/current/routing.html
+> - Chapter 4. *Controllers* https://symfony.com/doc/current/controller.html
+> - Chapter 5. *Templates* https://symfony.com/doc/current/templating.html
+> - Chapter 6. *Configuration* https://symfony.com/doc/current/configuration.html
