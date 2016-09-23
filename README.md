@@ -16,15 +16,29 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-## Step 2 - Generate a Symfony App
+## Step 2 - Generate a Composer config
 
-TODO..
+* for a simple PHP project:
+
+```shell
+composer init
+```
+
+* for a Symfony app:
+
+```shell
+composer create-project "symfony/framework-standard-edition:^3.0" new-symfony-project
+```
 
 ## Step 3 - Push to Prod - the Heroku way
+
+_TODO.._
 
 Try to deploy your app on heroku, that's simple and free:
 https://devcenter.heroku.com/articles/getting-started-with-symfony	
 
-e.g: https://is-it-raining-today.herokuapp.com/?q=Paris !
+e.g:
+- https://galactic-space-combat.herokuapp.com/
+- https://is-it-raining-today.herokuapp.com/?q=Paris
 
 [![Heroku](https://d3k90kvix375hb.cloudfront.net/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png)](https://heroku.com/)
