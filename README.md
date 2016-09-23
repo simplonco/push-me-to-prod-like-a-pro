@@ -46,7 +46,7 @@ Next, read the **Getting Started with Symfony on Heroku** tutorial:
 https://devcenter.heroku.com/articles/getting-started-with-symfony	
 
 Basically you have to do:
-```
+```shell
 # Run this from your terminal:
 # Please ensure that you have Ruby installed.
 wget -qO- https://toolbelt.heroku.com/install.sh | sh
