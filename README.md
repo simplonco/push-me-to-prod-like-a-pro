@@ -16,8 +16,6 @@ php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer
 ```
 
-http://boulogne.simplon.co/wp-content/uploads/2016/03/Tutoriel-PHP-Composer.pdf
-
 ## Step 2 - Generate a Composer config
 
 * for a simple PHP project:
@@ -32,29 +30,36 @@ composer init
 composer create-project "symfony/framework-standard-edition:^3.0" new-symfony-project
 ```
 
+* Learn more about:
+
+http://boulogne.simplon.co/wp-content/uploads/2016/03/Tutoriel-PHP-Composer.pdf
+
 ## Step 3 - Push to Prod - the Heroku way
 
+Try to deploy your app on heroku, that's simple and free!
+
+Start by following the guide **Getting Started on Heroku with PHP**:
+https://devcenter.heroku.com/articles/getting-started-with-php
 _TODO.._
 
-Try to deploy your app on heroku, that's simple and free:
+Next, read the **Getting Started with Symfony on Heroku** tutorial:
 https://devcenter.heroku.com/articles/getting-started-with-symfony	
 
-
-
-
+Basically you have to do:
+```
 # Run this from your terminal:
-
 # Please ensure that you have Ruby installed.
-
 wget -qO- https://toolbelt.heroku.com/install.sh | sh
+# Create an Heroku instance
+heroku create
+# If you use Symfony set env to PROD
+heroku config:set SYMFONY_ENV=prod
+# Push to PROD
+git push heroku master
+```
 
-
-e.g:
+At the end, you will get your app online, e.g:
 - https://galactic-space-combat.herokuapp.com/
 - https://is-it-raining-today.herokuapp.com/?q=Paris
 
 [![Heroku](https://d3k90kvix375hb.cloudfront.net/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png)](https://heroku.com/)
-
- heroku config:set SYMFONY_ENV=prod
-Setting config vars and restarting floating-badlands-41656... done
-SYMFONY_ENV: prod
