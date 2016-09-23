@@ -1,9 +1,9 @@
 Push to production like a PRO!
 ===============
 
-_Learn how to put an app online like a pro!_
+_Learn how to put a real app online_
 
-![When Indina Jones push to prod!](when-indiana-push-to-prod.gif)
+![Indiana Jones!](indiana-jones.gif)
 
 ## The Heroku way
 
