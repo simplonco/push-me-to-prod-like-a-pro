@@ -1,6 +1,6 @@
 Push to production like a PRO!
 ===============
 
-_Learn how to put an app online like a pro!__
+_Learn how to put an app online like a pro!_
 
-![How Indina Jones push to prod!](how-indiana-push-to-prod.gif)
+![When Indina Jones push to prod!](when-indiana-push-to-prod.gif)
