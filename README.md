@@ -3,7 +3,7 @@ Push to production like a PRO!
 
 _Learn how to put a real app online_
 
-![Indiana Jones!](indiana-jones.gif)
+![Indiana Jones](indiana-jones.gif)
 
 ## The Heroku way
 
