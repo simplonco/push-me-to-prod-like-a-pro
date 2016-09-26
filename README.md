@@ -42,7 +42,6 @@ Try to deploy your app on heroku, that's simple and free!
 
 Start by following the guide **Getting Started on Heroku with PHP**:
 https://devcenter.heroku.com/articles/getting-started-with-php
-_TODO.._
 
 Next, read the **Getting Started with Symfony on Heroku** tutorial:
 https://devcenter.heroku.com/articles/getting-started-with-symfony	
