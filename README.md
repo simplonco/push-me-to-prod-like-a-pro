@@ -62,6 +62,7 @@ git push heroku master
 At the end, you will get your app online, e.g:
 - https://galactic-space-combat.herokuapp.com/
 - https://is-it-raining-today.herokuapp.com/?q=Paris
+- https://choose-city-weathers.herokuapp.com/?q=khartoum
 - https://push-me-to-prod-like-a-pro.herokuapp.com/
 
 [![Heroku](https://d3k90kvix375hb.cloudfront.net/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png)](https://heroku.com/)
