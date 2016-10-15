@@ -1,5 +1,5 @@
-Push to production like a PRO!
-===============
+Push to production like a PRO! [![Build Status](https://travis-ci.org/simplonco/push-me-to-prod-like-a-pro.svg?branch=master)](https://travis-ci.org/simplonco/push-me-to-prod-like-a-pro)
+==============================
 
 _Learn how to put a real app online_
 
